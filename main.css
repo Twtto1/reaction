@@ -1,0 +1,69 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Helpers */
+.d-none {
+    display: none;
+}
+
+.d-flex-center {
+    --gap: 64px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+/* Lights */
+.lights {
+    display: flex;
+    gap: 64px;
+}
+
+.light {
+    --size: 256px;
+
+    width: var(--size);
+    height: var(--size);
+    border: 0.5vh solid #020202;
+    border-radius: var(--size);
+    background-color: #ffffff;
+}
+
+.light.on {
+    background-color: #872a28;
+}
+
+.lights.go .light{
+    background-color: #288748;
+}
+
+/* Reaction */
+.reaction {
+    font-size: 4vh;
+    white-space: none;
+    color: #8e8e8e;
+}

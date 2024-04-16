@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Reaction Time</title>
+</head>
+
+<body>
+    <section class="d-flex-center">
+        <div class="container d-flex-center">
+            <div class="lights">
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+            </div>
+            <div class="reaction">0.000</div>
+        </div>
+
+        <!-- Sounds -->
+        <div class="d-none">
+            <audio id="audio" controls class="short-beep" src="./sound/short-beep.mp3" preload="auto"></audio>
+            <audio id="audio" controls class="long-beep" src="./sound/long-beep.mp3" preload="auto"></audio>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
